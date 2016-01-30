@@ -1,0 +1,1014 @@
+
+<html>
+<head>
+  <title>Programming in 61 minutes</title>
+  <head profile="http://www.w3.org/2005/10/profile">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+<!--**********************************************************************-->
+
+
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!--**********************************************************************-->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+  <style type="text/css">
+    
+  .myheader {
+
+  	border: 1px solid black;
+  }
+
+    body {
+    	font-size: 1.7em;
+    	background: #f7fbfe;
+     font-family: 'Segoe UI', Arial, sans-serif;
+	}
+/**********************************************************************/
+
+
+
+.nav div ul{
+
+	padding-bottom: 0px;
+	margin-bottom: 0px;	
+}
+
+.nav {
+	background: #254d61;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	position: fixed;
+   	top: 0;
+   	z-index: 1;
+   	margin-right: 0px;
+}
+
+.nav-pills {
+
+	position: static;
+}
+
+.nav a {
+  /*color: #5a5a5a;*/
+  color: #e5ecf1;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  padding-bottom: 2px;
+  /*padding-bottom: 2px*/
+  text-transform: uppercase;
+}
+
+.nav a:visited {
+
+	color: #e5ecf1; 
+}
+.nav li {
+  display: inline;
+}
+
+
+
+.nav a:link {
+    text-decoration: none;
+    /*color: #008b45;*/
+    color: white;
+    transition: all 0.2s;
+}
+
+
+
+.nav a:hover {
+    color: #00cbcc;   
+}
+
+
+	.strikethrough:checked + span{
+  text-decoration:line-through
+}
+	
+	div.checkbox label input {
+
+		position: static;
+	}
+
+/**********************************************************************/
+
+	div.myheader {
+
+
+		margin-top: 0px;
+		padding-top: 0px;
+		margin: 0px;
+		color: #e5ecf1;
+		/*background: #2c6ca3;*/
+		background: #254d61;
+		text-align: center;
+		border-bottom: solid black 2px;
+	    
+	}
+
+	.shadow {
+		background: red;
+		box-shadow:3px 3px 5px 2px #ccc;
+	}
+
+	.barrel {
+
+	  width: 1000px;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	.col1 {
+	  float: left;
+	  width: 485px;
+	  margin-right: 10px;
+	}
+	.col2 {
+	  float: left;
+	  width: 485px;
+	}
+	.items {
+	  list-style: none;
+	  padding-left: 0px;
+	  margin-top: 7px;
+	}
+	span.link {
+	  text-decoration: none;
+	  cursor: pointer;
+      color: #1168CC;
+	  margin-left: 0.5em;
+	}
+	.section span {
+	  font-weight: bold;
+	}
+	.section {
+	  font-weight: bold;
+	}
+
+	.clear-both {
+	  clear: both;
+    }
+	.message {
+	  padding-top: 20px;
+	  font-size: 18px;
+	}
+	.display-none {
+	  display: none;
+	}
+	.make-homepage {
+	  display: inline-table;
+	  margin-bottom: 20px;
+	  font-size: 24px;
+	}
+	.clickable-prefix {
+	  cursor: pointer;
+	  display: inline-table;
+	  position: relative;
+	  text-align: left;
+	}
+	h1 {
+	  margin-bottom: 5px;
+	}
+	a {
+	  text-decoration: none;
+      color: #0faba9;
+	}
+    a:visited {
+      color: #27586e;
+    }
+	div.timeline {
+		margin-bottom: 1em;
+		font-size: 12px;
+	}
+
+	span.link {
+
+		color:  #0ac1ff;
+
+	}
+
+.li {
+
+	position: relative;
+}
+
+  </style>
+</head>
+
+<body>
+
+    <div class="nav">
+      <div class="container">
+        <ul class = "pull-left">
+
+          <li><a class="google" href="http://www.google.com" target="blank">Google</a></li>
+          <li><a href="http://www.facebook.com">Facebook</a></li>
+        </ul>
+        <ul class = "pull-right">
+          <li><a href="http://www.youtube.com">Youtube</a></li>
+          <li><a href="http://inbox.google.com">Inbox</a></li>
+          <li><a href="http://channeli.in">Channeli</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+<div class = "myheader">
+  <!-- <h1><span class='clickable-prefix'>Breathe, Eat, Drink, Sleep<span class="display-none"> and Code</span></span></h1> -->
+  <h1><span class='clickable-prefix'>Anyone can Code<span class="display-none">, but only the fearless can be great</span></span></h1>
+  <span class="make-homepage">(Make this your home page for the next 4 years)</span>
+  <div class='timeline'>
+    Show links updated after:
+    <span style='font-weight: bold' class='link 00-00-0000'>The beginning of Time</span>
+    <span class='link 24-01-2011 link'>24/01/2011</span>
+    <span class='link 26-01-2011 link'>26/01/2011</span>
+    <span class='link 23-02-2011 link'>23/02/2011</span>
+    <span class='link 26-04-2011 link'>26/04/2011</span>
+  </div>
+</div>
+
+
+
+<!--**********************************************************************-->
+			<!-- Tabs -->
+
+<button>Return the vertical position of the scrollbar</button>
+
+
+
+<div class="container">
+  <h3>Pills</h3>
+  <ul class="nav nav-pills">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+</div>
+<br/>
+<!--**********************************************************************-->
+
+
+<div class="barrel">
+  <div class="col1">
+    
+
+    <div class="section"><span class = "glyphicon glyphicon-cog"> Learn algorithms:</span></div>
+	<ol class="items">
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li><a class="link" href="http://www.codechef.com/wiki/tutorials">http://www.codechef.com/wiki/tutorials</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li><a class="link" href="http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index">
+	    http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index</a></li>
+	  </span>
+	  </label>
+	</div>
+	  
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li><a class="link" href="http://en.wikipedia.org/wiki/Introduction_to_Algorithms">
+	    http://en.wikipedia.org/wiki/Introduction_to_Algorithms</a></li>
+	  </span>
+	  </label>
+	</div>
+	</ol>
+
+	<div class="section"><span class = "glyphicon glyphicon-sort-by-attributes"> Practice algorithms:</span></div>
+	<ol class="items">
+
+<!--**********************************************************************-->
+
+
+		<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	   	  <li><a class="link" href="http://www.codechef.com/">http://www.codechef.com/</a></li>
+	  </span>
+	  </label>
+	</div>
+<!--**********************************************************************-->
+
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li><a class="link" href="http://www.topcoder.com/">http://www.topcoder.com/</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	  <div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li><a class="link" href="http://uva.onlinejudge.org/">http://uva.onlinejudge.org/</a></li>
+		</span>
+	  </label>
+	</div>
+
+	  <div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li><a class="link" href="http://www.spoj.pl/">http://www.spoj.pl/</a></li>
+		</span>
+	  </label>
+	</div>
+
+	</ol>
+
+	<div class="section">Programming languages:</div>
+	<ol class="items">
+	  	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Python: <a class="link" href="http://python.org/">http://python.org/</a></li>
+	  </span>
+	  </label>
+	</div>	
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>	   
+	  <li>C++: <a class="link" href="http://en.wikipedia.org/wiki/C%2B%2B">http://en.wikipedia.org/wiki/C++</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li class='24-01-2011 26-01-2011 23-02-2011'>PHP: <a class="link" href="http://php.net/manual/en/">http://php.net/manual/en/</a></li>
+	  </span>  
+	  </label>
+	</div> 
+	  
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Perl: <a class="link" href="http://www.perl.org/">http://www.perl.org/</a></li>
+	  </span>
+	  </label>
+	</div>  	  
+  	  
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+  	  <li>Javascript: <a class="link" href="http://w3schools.com/jsref/default.asp">http://w3schools.com/jsref/default.asp</a></li>
+	  </span>
+	  </label>
+	</div>	
+
+	</ol>
+
+	<div class="section">Learn C++:</div>
+	<ol class="items">
+	  
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li><a class="link" href="http://www.bloodshed.net/">http://www.bloodshed.net/</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>SGI STL Docs: <a class="link" href="">http://www.sgi.com/tech/stl/</a></li>
+	  </span>
+	  </label>
+	</div>	
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li><a class="link" href="http://cplusplus.com/">http://cplusplus.com/</a></li>
+	  </span>
+	  </label>
+	</div>	
+
+	</ol>
+
+	<div class="section">Learn Python:</div>
+
+	<ol class="items">
+	  
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>The hard way: <a class="link" href="http://learnpythonthehardway.org/index">http://learnpythonthehardway.org/index</a></li>
+	 	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Tutorial: <a class="link" href="http://docs.python.org/tutorial/">http://docs.python.org/tutorial/</a></li>
+	  </span>
+	  </label>
+	</div>	  
+
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Standard Library: <a class="link" href="http://docs.python.org/library/">http://docs.python.org/library/</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	  
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Cheat Sheet: <a class="link" href="http://www.addedbytes.com/cheat-sheets/python-cheat-sheet/">http://www.addedbytes.com/cheat-sheets/python-cheat-sheet/</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li class='24-01-2011'>Time Complexity of operations in Python: <a class="link" href="http://wiki.python.org/moin/TimeComplexity">http://wiki.python.org/moin/TimeComplexity</a></li>
+	  </span>
+	  </label>
+	</div>
+	  
+	 <div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li class='24-01-2011 26-01-2011'>Google&apos;s Python Class: <a class="link" href="http://code.google.com/edu/languages/google-python-class/index.html">http://code.google.com/edu/languages/google-python-class/index.html</a></li>
+	  </span>
+	  </label>
+	</div>
+	
+	</ol>
+
+	<div class="section">Javascript:</div>
+	<ol class="items">
+	  
+	 <div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li class='24-01-2011 26-01-2011'><a class="link" href="http://javascript.infogami.com/Javascript_in_Ten_Minutes">In 10 minutes</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	</ol>
+
+	<div class="section">Editors/IDEs:</div>
+	<ol class="items">
+	  
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>	
+	  <li>Emacs: <a class="link" href="http://www.gnu.org/software/emacs/">http://www.gnu.org/software/emacs/</a></li>
+	  </span>
+	  </label>
+	</div>
+	  
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Vim: <a class="link" href="http://www.vim.org/">http://www.vim.org/</a></li>
+	  </span>
+	  </label>
+	</div>
+	  
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Eclipse: <a class="link" href="http://www.eclipse.org/">http://www.eclipse.org/</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	</ol>
+
+  </div>
+
+  <div class="col2">
+
+
+	<div class="section">Basic Data Structures:</div>
+	<ol class="items">
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Array: <a class="link" href="http://en.wikipedia.org/wiki/Array_data_structure">http://en.wikipedia.org/wiki/Array_data_structure</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Linked List: <a class="link" href="http://en.wikipedia.org/wiki/Linked_list">http://en.wikipedia.org/wiki/Linked_list</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Hash Table: <a class="link" href="http://en.wikipedia.org/wiki/Hash_table">http://en.wikipedia.org/wiki/Hash_table</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Binary Tree: <a class="link" href="http://en.wikipedia.org/wiki/Binary_tree">http://en.wikipedia.org/wiki/Binary_tree</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Heap: <a class="link" href="http://en.wikipedia.org/wiki/Heap_%28data_structure%29">http://en.wikipedia.org/wiki/Heap_(data_structure)</a></li>
+	  </span>
+	  </label>
+	</div>	  
+	</ol>
+
+	<div class="section">Complexity of data structure operations:</div>
+	<ol class="items">
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li><a class="link" href="http://essays.hexapodia.net/datastructures/">http://essays.hexapodia.net/datastructures/</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li><a class="link" href="http://en.wikipedia.org/wiki/Array_data_structure#Efficiency_comparison_with_other_data_structures">
+	    http://en.wikipedia.org/wiki/Array_data_structure
+	  </a></li>
+	  </span>
+	  </label>
+	</div>
+
+	</ol>
+
+	<div class="section">Algorithms for Common Operations:</div>
+	<ol class="items">
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Searching: <a class="link" href="http://en.wikipedia.org/wiki/Search_algorithm">http://en.wikipedia.org/wiki/Search_algorithm</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Sorting: <a class="link" href="http://en.wikipedia.org/wiki/Sorting_algorithm">http://en.wikipedia.org/wiki/Sorting_algorithm</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Tree Traversal: <a class="link" href="http://en.wikipedia.org/wiki/Tree_traversal">http://en.wikipedia.org/wiki/Tree_traversal</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Graph algorithms: <a class="link" href="http://en.wikipedia.org/wiki/Category:Graph_algorithms">http://en.wikipedia.org/wiki/Category:Graph_algorithms</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li class='24-01-2011 26-01-2011 23-02-2011'>Dynamic Programming: <a class="link" href="http://people.csail.mit.edu/bdean/6.046/dp/">Practice Problems</a></li>
+	  	  </span>
+	  </label>
+	</div>
+
+	</ol>
+
+	<div class="section">Algorithm Lecture Videos:</div>
+	<ol class="items">
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li class='24-01-2011'><a class="link" href="http://www.youtube.com/watch?v=uFJhEPrbycQ&feature=PlayList&p=FE6E58F856038C69&index=8">Thinking Recursively</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li class='24-01-2011'><a class="link" href="http://www.aduni.org/courses/theory/index.php?view=cw">Theory of Computation</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li class='24-01-2011'><a class="link" href="http://www.aduni.org/courses/algorithms/index.php?view=cw">Algorithms</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li class='24-01-2011 26-01-2011 23-02-2011'><a class="link" href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/video-lectures/">MIT Open Courseware - Introduction to Algorithms</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	</ol>
+
+	<div class="section">Advanced Data Structures &amp; Algorithms:</div>
+	<ol class="items">
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li class='24-01-2011 26-01-2011 23-02-2011 26-04-2011'><a class="link" href="http://www.cs.otago.ac.nz/staffpriv/mike/Papers/MinMaxHeaps/MinMaxHeaps.pdf">Min-Max Heaps</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li class='24-01-2011 26-01-2011 23-02-2011 26-04-2011'><a class="link" href="http://www.cise.ufl.edu/~sahni/dsaaj/enrich/c13/double.htm">Double-Ended Priority Queues and Interval Heaps</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li class='24-01-2011 26-01-2011 23-02-2011 26-04-2011'><a class="link" href="http://www.cise.ufl.edu/~sahni/dsaaj/enrich/c16/suffix.htm">Suffix Trees</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li class='24-01-2011 26-01-2011 23-02-2011 26-04-2011'><a class="link" href="http://www.cise.ufl.edu/~sahni/dsaaj/enrich/c13/pairing.htm">Pairing Heaps</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li class='24-01-2011 26-01-2011 23-02-2011 26-04-2011'><a class="link" href="http://www.cise.ufl.edu/~sahni/dsaaj/enrich/c16/tries.htm">Tries</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li class='24-01-2011 26-01-2011 23-02-2011 26-04-2011'><a class="link" href="http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=lowestCommonAncestor">Range Minimum Query and Lowest Common Ancestor</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li class='24-01-2011 26-01-2011 23-02-2011 26-04-2011'><a class="link" href="http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=binaryIndexedTrees">Binary Indexed Trees (Fenwick Trees)</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li class='24-01-2011 26-01-2011 23-02-2011 26-04-2011'><a class="link" href="http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=disjointDataStructure">Disjoint-set Data Structures</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li class='24-01-2011 26-01-2011 23-02-2011 26-04-2011'><a class="link" href="http://www.ics.uci.edu/~eppstein/161/960130.html">Median of Medians Algorithm</a></li>
+	 </span>
+	 </label>
+	</div>
+	</ol>
+
+	<div class="section">Miscellaneous:</div>
+	<ol class="items">
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Theory of computation (MUST STUDY HARD): <a class="link" href="http://en.wikipedia.org/wiki/Theory_of_computation">http://en.wikipedia.org/wiki/Theory_of_computation</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>SQL: <a class="link" href="http://en.wikipedia.org/wiki/SQL">http://en.wikipedia.org/wiki/SQL</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>SQL Reference: <a class="link" href="http://www.w3schools.com/sql/sql_quickref.asp">http://www.w3schools.com/sql/sql_quickref.asp</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>HTML: <a class="link" href="http://html-reference.com/">http://html-reference.com/</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>XKCD: <a class="link" href="http://www.xkcd.com/">http://www.xkcd.com/</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Web Search: <a class="link" href="http://duckduckgo.com/">http://duckduckgo.com/</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	</ol>
+
+	<div class="section">Bored? Tech. news here!!</div>
+	<ol class="items">
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Ycombinator: <a class="link" href="http://news.ycombinator.com/">http://news.ycombinator.com/</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	<div class="checkbox">
+	   <label>
+	   <input type="checkbox" name="packersOff" class="strikethrough" value="1">
+	   <span>
+	  <li>Reddit: <a class="link" href="http://www.reddit.com/r/programming/">http://www.reddit.com/r/programming/</a></li>
+	  </span>
+	  </label>
+	</div>
+
+	</ol>
+
+  </div>
+
+<!--
+	<div class="section"></div>
+	<ol class="items">
+	  <li><a class="link" href=""></a></li>
+	  <li><a class="link" href=""></a></li>
+	  <li><a class="link" href=""></a></li>
+	</ol>
+	  <li><a class="link" href=""></a></li>
+
+-->
+
+
+  <div class="clear-both"></div>
+
+
+<div class="message">
+  Email me at: <span class="email">domainname w/o the .com _+61_ _AT_ gmail _DOT_ com</span> if you have ANY questions.
+</div>
+
+</div>
+
+
+<p>Scrolled <span id = "count">0</span> times.</p>
+
+
+<script type="text/javascript">
+  $().ready(function() {
+    var parts = [ "dhruvbird", "+61", "@", "gmail", ".", "com" ];
+	var e = parts.join("");
+	var a = $("<a></a>").css("display", "inline-block")
+	                    .attr("href", "mailto:" + e)
+						.html(e);
+	$(".email").html('').append(a);
+
+	var hidden = $(this).find(".display-none");
+	var hw = hidden.width();
+
+	$(".clickable-prefix").click(function() {
+	  $(this).unbind("click")
+	         .css("cursor", "auto");
+
+	  // console.log($(this).css("left"));
+	  $(".make-homepage").height($(".make-homepage").height());
+	  $(".make-homepage").animate( { "font-size": 14 }, 1200, function() {
+	    $(".clickable-prefix").animate( { width: $(".clickable-prefix").width() + hw + 20 }, 900, function() {
+	      hidden.show(2000);
+	    });
+      });
+
+  	});
+
+	$(".timeline span.link").click(function(e) {
+		var classes = [ '24-01-2011', '26-01-2011', '23-02-2011', '26-04-2011' ];
+		var t = $(this);
+		var all_timeline_links = $(".timeline span.link");
+		var all_items = $("ol.items li").add("div.section");
+		all_timeline_links.css("font-weight", "normal");
+		t.css("font-weight", "bold");
+
+		if (t.hasClass('00-00-0000')) {
+			all_items.show();
+			return;
+		}
+
+		for (var i = 0; i < classes.length; ++i) {
+			var c = classes[i];
+			if (t.hasClass(c)) {
+				all_items.hide();
+				$("ol.items li." + c).show();
+				$("ol.items li." + c).each(function(i, v) {
+					$(v).parent().prev().show();
+				});
+				break;
+			}
+		}
+
+	});
+  });
+
+// *******************************************************************************
+		// first attempt to input scroll shadow..
+// *******************************************************************************'
+x = 0;
+$(document).ready(function(){
+    $(window).scroll(function(){
+        $("#count").text( x+= 1);
+        if(x >= 41) {
+        $(".nav").addClass("shadow");
+    }
+
+    if (x <= 40) {
+
+    	$(".nav").removeClass("shadow");
+    }
+    });
+});
+
+
+// *******************************************************************************
+		// finding better solution for scroll shadow..
+// *******************************************************************************'
+
+
+
+// $(document).ready(function(){
+//     $("button").click(function(){
+//         alert($(window).scrollTop() + " px");
+//     });
+// });
+
+// $(document).ready(function(){
+//     if ($(window).scrollTop()) {
+
+
+//     }
+// });
+
+</script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12252022-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<div style="height: 100px">&nbsp;</div>
+</body>
+</html>
+<<<<<<< HEAD
+
+<!-- here i am beginning a totally new session keep track of this -->
+<!-- now i am writiing few more lines to this document -->
+<!-- now i am adding a few more tiny things to this document -->
+<!-- it is fun adding anything to this -->
+<!-- add anything.. this is getting tiring now -->
+<!-- 5th line -->
+<!-- 6th line added -->
+<!-- 7th line -->
+<!-- 8th line on commercial_project -->
+=======
+>>>>>>> parent of 9b35700... this is the first commit to be known
